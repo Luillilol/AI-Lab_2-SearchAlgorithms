@@ -1,0 +1,6 @@
+node: node4   date: Mon Oct  5 06:35:32 AM EDT 2026   threads: 48
+Model name:                              INTEL(R) XEON(R) GOLD 5520+
+Socket(s):                               2
+NUMA node(s):                            2
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi       3.2Gi       247Gi        83Mi       1.7Gi       247Gi

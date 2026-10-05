@@ -1,0 +1,2 @@
+make: g++: No such file or directory
+make: *** [Makefile:13: iddfs_seq] Error 127
