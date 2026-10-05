@@ -1,0 +1,79 @@
+node: node4   date: Mon Oct  5 06:55:57 AM EDT 2026   threads: 48
+Model name:                              INTEL(R) XEON(R) GOLD 5520+
+Socket(s):                               2
+NUMA node(s):                            2
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi       3.2Gi       247Gi        83Mi       1.7Gi       247Gi
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -o iddfs_seq iddfs_seq.cpp
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -o bidir_seq bidir_seq.cpp
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -o astar_seq astar_seq.cpp
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -fopenmp -o iddfs_par iddfs_par.cpp
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -fopenmp -o bidir_par bidir_par.cpp
+g++ -O3 -std=c++17 -march=native -Wall -Wextra -Wno-unknown-pragmas -fopenmp -o astar_par astar_par.cpp
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: /mnt/beegfs/insarlab/falcon/rubik_solvers/pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 75.2s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 36.3s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 36.3s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 147.9s
+  [ OK ] cubie model agrees with the 54-sticker model of the Python code
+  [ OK ] 54-sticker input -> cube -> key -> cube round trip
+  [ OK ] raw 54-sticker input is detected and parsed
+  [ OK ] move followed by its inverse returns to the solved cube
+  [ OK ] 18 moves generate 18, 243, 3240, 43239 new states at depth 1..4 (known values)
+  [ OK ] heuristic never exceeds the length of the scramble (admissible)
+  [ OK ] heuristic changes by at most 1 per move (consistent)
+SELF-TEST PASSED
+== A* (sequential, 1 thread) ==
+Pattern databases (cache folder: /mnt/beegfs/insarlab/falcon/rubik_solvers/pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 75.2s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 36.3s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 36.3s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 147.8s
+CSV: /mnt/beegfs/insarlab/falcon/rubik_solvers/results_par_663658/calib_astar_seq_node4.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+    10 |     3 |      3 |               0.0014 | 10.00
+    11 |     3 |      3 |               0.0038 | 10.00
+    12 |     3 |      3 |               0.0807 | 12.00
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: /mnt/beegfs/insarlab/falcon/rubik_solvers/pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 75.2s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 36.3s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 36.3s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 147.8s
+CSV: /mnt/beegfs/insarlab/falcon/rubik_solvers/results_par_663658/astar_par.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |    10 |     10 |               0.0005 | 1.00
+     2 |    10 |     10 |               0.0003 | 2.00
+     3 |    10 |     10 |               0.0005 | 3.00
+     4 |    10 |     10 |               0.0006 | 4.00
+     5 |    10 |     10 |               0.0008 | 5.00
+     6 |    10 |     10 |               0.0011 | 6.00
+     7 |    10 |     10 |               0.0018 | 7.00
+     8 |    10 |     10 |               0.0022 | 8.00
+     9 |    10 |     10 |               0.0035 | 9.00
+    10 |    10 |     10 |               0.0047 | 10.00
+    11 |    10 |     10 |               0.0076 | 10.70
+    12 |    10 |     10 |               0.0128 | 11.90
+    13 |    10 |     10 |               0.0608 | 12.80
+    14 |    10 |     10 |               0.7883 | 14.00
+    15 |    10 |     10 |               7.0485 | 15.00
+    16 |    10 |      4 |              35.4071 | 16.00
+    17 |    10 |      1 |              32.6434 | 16.00
+    18 |    10 |      1 |              30.9592 | 16.00
+    19 |    10 |      1 |              46.8261 | 16.00
+Finished: Mon Oct  5 07:36:19 AM EDT 2026   results in /mnt/beegfs/insarlab/falcon/rubik_solvers/results_par_663658
