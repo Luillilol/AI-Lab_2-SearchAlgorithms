@@ -1,0 +1,129 @@
+Starting on node: node2   Mon Oct  5 12:36:38 AM CST 2026
+make: Nothing to be done for 'all'.
+SELF-TEST PASSED
+SELF-TEST PASSED
+SELF-TEST PASSED
+SELF-TEST PASSED
+SELF-TEST PASSED
+SELF-TEST PASSED
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 0.9s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 0.4s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 0.4s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 1.8s
+== IDDFS (sequential, 1 thread) ==
+CSV: smoke_663653/iddfs_seq.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0000 | 1.00
+     2 |     2 |      2 |               0.0000 | 2.00
+     3 |     2 |      2 |               0.0000 | 3.00
+     4 |     2 |      2 |               0.0003 | 4.00
+     5 |     2 |      2 |               0.0069 | 5.00
+     6 |     2 |      2 |               0.0602 | 6.00
+     7 |     2 |      2 |               1.4284 | 7.00
+     8 |     2 |      2 |              16.2539 | 8.00
+== Bidirectional (sequential, 1 thread) ==
+CSV: smoke_663653/bidir_seq.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0000 | 1.00
+     2 |     2 |      2 |               0.0000 | 2.00
+     3 |     2 |      2 |               0.0000 | 3.00
+     4 |     2 |      2 |               0.0000 | 4.00
+     5 |     2 |      2 |               0.0001 | 5.00
+     6 |     2 |      2 |               0.0003 | 6.00
+     7 |     2 |      2 |               0.0020 | 7.00
+     8 |     2 |      2 |               0.0038 | 8.00
+     9 |     2 |      2 |               0.0304 | 9.00
+    10 |     2 |      2 |               0.0777 | 10.00
+    11 |     2 |      2 |               0.3365 | 11.00
+    12 |     2 |      2 |               1.7393 | 12.00
+== A* (sequential, 1 thread) ==
+Pattern databases (cache folder: pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 0.9s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 0.4s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 0.4s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 1.8s
+CSV: smoke_663653/astar_seq.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0000 | 1.00
+     2 |     2 |      2 |               0.0000 | 2.00
+     3 |     2 |      2 |               0.0000 | 3.00
+     4 |     2 |      2 |               0.0000 | 4.00
+     5 |     2 |      2 |               0.0000 | 5.00
+     6 |     2 |      2 |               0.0000 | 6.00
+     7 |     2 |      2 |               0.0000 | 7.00
+     8 |     2 |      2 |               0.0000 | 8.00
+     9 |     2 |      2 |               0.0000 | 9.00
+    10 |     2 |      2 |               0.0020 | 10.00
+    11 |     2 |      2 |               0.0048 | 11.00
+    12 |     2 |      2 |               0.0335 | 12.00
+    13 |     2 |      2 |               0.7333 | 13.00
+    14 |     2 |      2 |              10.0698 | 14.00
+== IDDFS (parallel, 48 threads) ==
+CSV: smoke_663653/iddfs_par.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0002 | 1.00
+     2 |     2 |      2 |               0.0001 | 2.00
+     3 |     2 |      2 |               0.0002 | 3.00
+     4 |     2 |      2 |               0.0011 | 4.00
+     5 |     2 |      2 |               0.0011 | 5.00
+     6 |     2 |      2 |               0.0027 | 6.00
+     7 |     2 |      2 |               0.0474 | 7.00
+     8 |     2 |      2 |               0.5371 | 8.00
+== Bidirectional (parallel, 48 threads) ==
+CSV: smoke_663653/bidir_par.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0016 | 1.00
+     2 |     2 |      2 |               0.0006 | 2.00
+     3 |     2 |      2 |               0.0026 | 3.00
+     4 |     2 |      2 |               0.0051 | 4.00
+     5 |     2 |      2 |               0.0048 | 5.00
+     6 |     2 |      2 |               0.0056 | 6.00
+     7 |     2 |      2 |               0.0064 | 7.00
+     8 |     2 |      2 |               0.0066 | 8.00
+     9 |     2 |      2 |               0.0092 | 9.00
+    10 |     2 |      2 |               0.0144 | 10.00
+    11 |     2 |      2 |               0.0714 | 11.00
+    12 |     2 |      2 |               0.1351 | 12.00
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 0.9s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 0.4s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 0.4s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 1.8s
+CSV: smoke_663653/astar_par.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |     2 |      2 |               0.0015 | 1.00
+     2 |     2 |      2 |               0.0006 | 2.00
+     3 |     2 |      2 |               0.0006 | 3.00
+     4 |     2 |      2 |               0.0007 | 4.00
+     5 |     2 |      2 |               0.0015 | 5.00
+     6 |     2 |      2 |               0.0014 | 6.00
+     7 |     2 |      2 |               0.0013 | 7.00
+     8 |     2 |      2 |               0.0020 | 8.00
+     9 |     2 |      2 |               0.0028 | 9.00
+    10 |     2 |      2 |               0.0053 | 10.00
+    11 |     2 |      2 |               0.0089 | 11.00
+    12 |     2 |      2 |               0.0113 | 12.00
+    13 |     2 |      2 |               0.0640 | 13.00
+    14 |     2 |      2 |               0.7763 | 14.00
+Finished: Mon Oct  5 12:37:52 AM CST 2026   results in /mnt/beegfs/insarlab/falcon/rubik_solvers/smoke_663653

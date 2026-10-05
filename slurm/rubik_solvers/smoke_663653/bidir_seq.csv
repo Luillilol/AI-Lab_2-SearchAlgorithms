@@ -1,0 +1,25 @@
+algorithm,version,threads,test_id,scramble_depth,scramble,status,solved,verified,solution_length,solution,time_s,mem_peak_mb,mem_search_mb,nodes_expanded,nodes_generated,timeout_s,mem_limit_gb,seed,setup_s,nodes_stored
+Bidirectional,sequential,1,0,1,B2,SOLVED,1,1,1,B2,0.000024,3.5,0.1,1,17,60.0,60.0,1,0.000,19.000
+Bidirectional,sequential,1,1,1,L',SOLVED,1,1,1,L,0.000016,3.6,0.0,1,7,60.0,60.0,1,0.000,9.000
+Bidirectional,sequential,1,2,2,B' L,SOLVED,1,1,2,L' B,0.000012,3.6,0.0,2,36,60.0,60.0,1,0.000,38.000
+Bidirectional,sequential,1,3,2,R' B2,SOLVED,1,1,2,B2 R,0.000010,3.6,0.0,2,30,60.0,60.0,1,0.000,32.000
+Bidirectional,sequential,1,4,3,R2 B' L,SOLVED,1,1,3,L' B R2,0.000015,3.6,0.0,11,169,60.0,60.0,1,0.000,162.000
+Bidirectional,sequential,1,5,3,F' R' F2,SOLVED,1,1,3,F2 R F,0.000016,3.6,0.0,16,241,60.0,60.0,1,0.000,225.000
+Bidirectional,sequential,1,6,4,F2 R' B' U2,SOLVED,1,1,4,U2 B R F2,0.000027,3.6,0.0,34,513,60.0,60.0,1,0.000,470.000
+Bidirectional,sequential,1,7,4,D' L' D R,SOLVED,1,1,4,R' D' L D,0.000019,3.6,0.0,26,387,60.0,60.0,1,0.000,353.000
+Bidirectional,sequential,1,8,5,R' F' R B2 R,SOLVED,1,1,5,R' B2 R' F R,0.000145,3.7,0.1,199,2988,60.0,60.0,1,0.000,2672.000
+Bidirectional,sequential,1,9,5,B' U2 R2 F2 R',SOLVED,1,1,5,R F2 R2 U2 B,0.000079,3.7,0.0,172,2582,60.0,60.0,1,0.000,2305.000
+Bidirectional,sequential,1,10,6,F2 D' B2 L' D R',SOLVED,1,1,6,R D' L B2 D F2,0.000285,3.9,0.1,464,6965,60.0,60.0,1,0.000,6202.000
+Bidirectional,sequential,1,11,6,F R2 B L' F' D',SOLVED,1,1,6,D F L B' R2 F',0.000234,3.9,0.0,454,6814,60.0,60.0,1,0.000,6072.000
+Bidirectional,sequential,1,12,7,R U F2 B2 U' D' B,SOLVED,1,1,7,B' U D F2 B2 U' R',0.002844,6.9,3.1,3603,54047,60.0,60.0,1,0.000,48091.000
+Bidirectional,sequential,1,13,7,B2 L U' D2 R2 D L,SOLVED,1,1,7,L' D' R2 U D2 L' B2,0.001174,6.9,0.0,2074,31102,60.0,60.0,1,0.000,27685.000
+Bidirectional,sequential,1,14,8,F2 R2 B' U R' B U2 R,SOLVED,1,1,8,R' U2 B' R U' B R2 F2,0.004878,9.7,2.8,6272,94072,60.0,60.0,1,0.000,83703.000
+Bidirectional,sequential,1,15,8,D' L D' F' D2 L' F' R2,SOLVED,1,1,8,R2 F L D2 F D L' D,0.002718,9.7,0.0,4688,70323,60.0,60.0,1,0.000,62575.000
+Bidirectional,sequential,1,16,9,R B2 U F B' D R D2 B',SOLVED,1,1,9,B D2 R' D' F' B U' B2 R',0.047078,37.2,27.5,44598,668973,60.0,60.0,1,0.000,593569.000
+Bidirectional,sequential,1,17,9,R2 D' B U F U2 L' R' D,SOLVED,1,1,9,D' L R U2 F' U' B' D R2,0.013728,37.2,0.0,19341,290118,60.0,60.0,1,0.000,257814.000
+Bidirectional,sequential,1,18,10,F2 R' B D2 F R' D2 L2 B' D',SOLVED,1,1,10,D B L2 D2 R F' D2 B' R F2,0.075025,53.2,16.0,83845,1257676,60.0,60.0,1,0.000,1115431.000
+Bidirectional,sequential,1,19,10,F' B L2 D2 F2 D2 B2 D L2 F',SOLVED,1,1,10,F L2 D' B2 D2 F2 D2 L2 B' F,0.080402,61.2,8.0,86621,1299317,60.0,60.0,1,0.000,1152334.000
+Bidirectional,sequential,1,20,11,B' R2 U' F2 R' B2 D2 B' L2 D' L2,SOLVED,1,1,11,L2 D L2 B D2 B2 R F2 U R2 B,0.479017,191.8,130.5,328957,4934360,60.0,60.0,1,0.000,4364785.000
+Bidirectional,sequential,1,21,11,B D' B2 R2 D L2 R' F D B U2,SOLVED,1,1,11,U2 B' D' F' L2 R D' R2 B2 D B',0.194046,101.8,57.9,162937,2444053,60.0,60.0,1,0.000,2164158.000
+Bidirectional,sequential,1,22,12,U L2 D' B' L' D F2 R U' R2 D R',SOLVED,1,1,12,R D' R2 U R' F2 D' L B D L2 U',1.255972,357.6,313.8,678589,10178830,60.0,60.0,1,0.000,8997045.000
+Bidirectional,sequential,1,23,12,R2 B L2 U F2 R' D' B' R B' L D,SOLVED,1,1,12,D' L' B R' B D R F2 U' L2 B' R2,2.222549,544.6,498.7,1018126,15271893,60.0,60.0,1,0.000,13496770.000

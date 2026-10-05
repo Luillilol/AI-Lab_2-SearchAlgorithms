@@ -1,0 +1,62 @@
+Starting on node: node2   Mon Oct  5 12:42:56 AM CST 2026
+CPUs for this job: 48
+make: Nothing to be done for 'all'.
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 0.9s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 0.4s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 0.4s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 1.8s
+  [ OK ] cubie model agrees with the 54-sticker model of the Python code
+  [ OK ] 54-sticker input -> cube -> key -> cube round trip
+  [ OK ] raw 54-sticker input is detected and parsed
+  [ OK ] move followed by its inverse returns to the solved cube
+  [ OK ] 18 moves generate 18, 243, 3240, 43239 new states at depth 1..4 (known values)
+  [ OK ] heuristic never exceeds the length of the scramble (admissible)
+  [ OK ] heuristic changes by at most 1 per move (consistent)
+SELF-TEST PASSED
+== A* (parallel, 48 threads) ==
+Pattern databases (cache folder: pdb_cache)
+  PDB 8 corners                        88179840 entries, average h = 8.764, max = 11, loaded in 0.9s
+  PDB 6 edges (0-1-2-3-4-5)            42577920 entries, average h = 7.623, max = 10, loaded in 0.4s
+  PDB 6 edges (6-7-8-9-10-11)          42577920 entries, average h = 7.614, max = 10, loaded in 0.4s
+  depth histograms (number of entries per distance):
+   8 corners                    0:1 1:18 2:243 3:2874 4:28000 5:205416 6:1168516 7:5402628 8:20776176 9:45391616 10:15139616 11:64736
+   6 edges (0-1-2-3-4-5)        0:1 1:15 2:190 3:2362 4:27243 5:283439 6:2407532 7:13170548 8:23781718 9:2904806 10:66
+   6 edges (6-7-8-9-10-11)      0:1 1:18 2:231 3:2782 4:31425 5:315668 6:2557256 7:13262054 8:23395739 9:3012606 10:140
+  heuristic ready in 1.8s
+== IDDFS (sequential, 1 thread) ==
+CSV: results_663654/iddfs_seq.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |    10 |     10 |               0.0000 | 1.00
+     2 |    10 |     10 |               0.0000 | 2.00
+     3 |    10 |     10 |               0.0000 | 3.00
+     4 |    10 |     10 |               0.0004 | 4.00
+     5 |    10 |     10 |               0.0069 | 5.00
+     6 |    10 |     10 |               0.0902 | 6.00
+     7 |    10 |     10 |               0.8097 | 7.00
+     8 |    10 |     10 |              12.0370 | 8.00
+     9 |    10 |     10 |             196.4996 | 9.00
+== Bidirectional (sequential, 1 thread) ==
+CSV: results_663654/bidir_seq.csv
+
+ depth | tests | solved | avg time (s, solved) | avg moves (solved)
+     1 |    10 |     10 |               0.0000 | 1.00
+     2 |    10 |     10 |               0.0000 | 2.00
+     3 |    10 |     10 |               0.0000 | 3.00
+     4 |    10 |     10 |               0.0000 | 4.00
+     5 |    10 |     10 |               0.0001 | 5.00
+     6 |    10 |     10 |               0.0002 | 6.00
+     7 |    10 |     10 |               0.0011 | 7.00
+     8 |    10 |     10 |               0.0028 | 8.00
+     9 |    10 |     10 |               0.0250 | 9.00
+    10 |    10 |     10 |               0.0650 | 10.00
+    11 |    10 |     10 |               0.6020 | 10.70
+    12 |    10 |     10 |               2.1985 | 11.90
+    13 |    10 |     10 |              11.4297 | 12.80
+    14 |    10 |     10 |              43.3195 | 14.00
